@@ -1,0 +1,28 @@
+apply plugin: 'android'
+
+dependencies {
+    //compile 'com.android.support:support-v7:+'
+    compile 'com.android.support:recyclerview-v7:21.+'
+    compile 'com.android.support:appcompat-v7:21.+'
+    compile 'com.android.support:gridlayout-v7:21.+'
+    compile 'com.android.support:mediarouter-v7:21.+'
+}
+
+android {
+    compileSdkVersion "android-L"
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.example.android.supportv7"
+        minSdkVersion 'L'
+        targetSdkVersion 'L'
+    }
+
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
